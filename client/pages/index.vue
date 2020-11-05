@@ -107,7 +107,8 @@ ul{
   list-style: none;
   text-align: center;
   font-style: italic;
-  height: 50px;
+  height: 70px;
+  flex:1;
   overflow-y: auto;
 }
 li:nth-child(2n+1){
@@ -117,6 +118,9 @@ li:nth-child(2n+1){
 @media screen and (max-width: 600px) {
   .users-container{
     flex-direction: column;
+  }
+  .btn-restart{
+    height: 8vw;
   }
 }
 </style>

@@ -6,7 +6,7 @@
   <div class="input-container"><input type="number" v-model="guessedNumber" min="0" max="100" :disabled="isDisabled"></div>
   <div class="button-container"><button v-on:click="sub" :disabled="disable">Submit</button></div>
   <div class="result">{{result}}</div>
-  <img class="celebrate" v-if="hasWon && hasWinner"
+  <img class="celebrate" v-if="isWinner"
    src="https://i.pinimg.com/originals/90/63/72/9063723db16c7b7a35b05ca712216844.gif" 
   >
 </div>
@@ -25,7 +25,7 @@ export default{
       user_id: this.$props.id,
       result: "",
       win: false,
-      hasWon: this.$props.hasWinner && this.winner == this.user_id
+      winner: ''
     }
   },
   computed:{
@@ -43,8 +43,8 @@ export default{
     disable:function(){
         return !this.validated || !this.isCurrent
     },
-    hasWon:function(){
-      return  this.$props.hasWinner && this.winner == this.user_id;
+    isWinner: function(){
+      return this.$props.hasWinner && this.winner == this.$props.id
     }
   },
   methods:{
@@ -63,7 +63,7 @@ export default{
       if(!this.win){
         this.$root.$emit('changeCurrent', 'current user changes');
       }else{
-        this.hasWon = this.user_id;
+        this.winner = this.user_id;
         this.$root.$emit('changeWin', 'someone won');
       }
     }
