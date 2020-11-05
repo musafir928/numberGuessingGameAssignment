@@ -3,8 +3,8 @@
 
 <h3>to run the application locally</h3>
 
-<ol>
- <li>open terminal<li>
+<ul>
+ <li>open terminal</li>
  <li>cd <your code folder eg:desktop> <li>
  <li>run: git clone  https://github.com/musafir928/numberGuessingGameAssignment.git<li>
  <li>cd numberGuessingGameAssignment</li>
@@ -18,7 +18,7 @@
 <h6>client now running at localhost:3000</h6>
  <li>browse: localhost:3000</li>
  enjoy!
-</ol>
+</ul>
 <br>
 <hr>
 
