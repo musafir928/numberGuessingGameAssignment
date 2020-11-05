@@ -5,31 +5,17 @@
 
 <ol>
  <li>open terminal<li>
- <br>
  <li>cd <your code folder eg:desktop> <li>
- <br>
  <li>run: git clone  https://github.com/musafir928/numberGuessingGameAssignment.git<li>
- <br>
- <li>run: git clone  https://github.com/musafir928/numberGuessingGameAssignment.git<li>
- <br>
  <li>cd numberGuessingGameAssignment</li>
- <br>
  <li>you may need to run: git checkout master</li>
- <br>
  <li>run npm i --save</li>
- <br>
  <li>cd client</li>
- <br>
  <li>npm i --save</li>
- <br>
  <li>back to app root folder: cd ..</li>
- <br>
  <li>run: npm run dev</li>
-<br>
 <h6>server now running at localhost:5000</h6>
 <h6>client now running at localhost:3000</h6>
-
-<br>
  <li>browse: localhost:3000</li>
  enjoy!
 </ol>
